@@ -36,7 +36,7 @@ router.post('/', async (req, res) => {
     })
     res.status(201).json(newCategory);
   } catch (err) {
-    res.status(500)
+    res.status(500).json(err)
   }
   // create a new category
 });
