@@ -4,6 +4,9 @@ const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 
+//product is indirectly associated to tag through product tag
+// Creating a ProductTag Instance
+
 ProductTag.init(
   {
     id: {
@@ -35,5 +38,6 @@ ProductTag.init(
     modelName: 'product_tag',
   }
 );
+
 
 module.exports = ProductTag;
